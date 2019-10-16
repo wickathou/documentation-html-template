@@ -5,156 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
-    <link rel="stylesheet/less" type="text/css" href="styles.less" />
+    <link rel="stylesheet/less" type="text/css" href="presnsr.less" />
     <script src="less.min.js" type="text/javascript"></script>
     <title>Buenbnb, cleaning service for Airbnb properties</title>
 </head>
-<body>
+<body class="font-size">
 
     <nav class="navigation content centered">
         <div id="logo-nav"><img id="logo-home" src="img/logo.png" alt="Buenbnb logo"></div>
         <div id="menu-nav">
             <!-- <h3 class="nav-item regular">Process</h3>
             <h3 class="nav-item regular">Pricing</h3> -->
-            <h3 class="nav-item regular">How it works</h3>
+            <h3 class="nav-item style-nav regular">How it works</h3>
             <h3 class="nav-item" id="book-now">Book now</h3>
 
         </div>
     </nav>
 
-    <!-- Modal start -->
-    <div id="book-modal" class="modal-box">
-        <div class="modal-content">
-            <div>
-                <h3>Tell us when and where!</h3>
-            </div>
-            <div id="booking-form">
-                <!-- <div class="booking-information">
-                <p>Name</p>
-                <input type="text" placeholder="John McClean">
-                <p>Phone</p>
-                <input type="tel" placeholder="123-12348">
-                <p>Email</p>
-                <input type="email" placeholder="clean@example.com">
-                <p>Address</p>
-                <input type="text" name="address">
-                <p>Cleaning date</p>
-                <input type="date">
-                <p>Cleaning hour</p>
-                <input type="time"><br><br>
-                </div> -->
-                <div class="quote-box">
-                    <div id="instant-quotation">
-                        <div id="calculator-input">
-                            <div id="geo-location">
-                                <!-- country selector -->
-                                <div id="country-selector">
-                                    <h3>Select country</h3>
-                                    <select name="country" id="country">
-                                        <option value="not-selected">-Select-</option>
-                                        <option value="colombia">Colombia</option>
-                                        <option value="ecuador">Ecuador</option>
-                                        <option value="mexico">Mexico</option>
-                                        <option value="us">United States</option>
-                                    </select>
-                                </div>
-                                <!-- Town/city selection -->
-                                <div id="town-selector">
-                                    <h3>Select Town</h3>
-                                    <div id="colombia">
-                                        <select name="town" id="col-town">
-                                            <option value="not-selected">-Select-</option>
-                                            <option value="Guatape">Guatape</option>
-                                            <option value="Cartagena">Cartagena</option>
-                                            <option value="Santa Marta">Santa Marta</option>
-                                        </select>
-                                    </div>
-                                    <div id="ecuador">
-                                        <select name="town" id="ecu-town">
-                                            <option value="not-selected">-Select-</option>
-                                            <option value="Guayaquil">Guayaquil</option>
-                                            <option value="Quito">Quito</option>
-                                        </select>
-                                    </div>
-                                    <div id="mexico">
-                                        <select name="town" id="mex-town">
-                                            <option value="not-selected">-Select-</option>
-                                            <option value="Cancun">Cancun</option>
-                                            <option value="Tulum">Tulum</option>
-                                            <option value="Puerto Aventuras">Puerto Aventuras</option>
-                                            <option value="Playa del Carmen">Playa del Carmen</option>
-                                        </select>
-                                    </div>
-                                    <div id="us">
-                                        <select name="town" id="us-town">
-                                            <option value="not-selected">-Select-</option>
-                                            <option value="Miami Beach">Miami Beach</option>
-                                            <option value="Fort Lauderdale">Fort Lauderdale</option>
-                                            <option value="West Palm Beach">West Palm Beach</option>
-                                        </select>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="size-selector">
-                                <h3>Size of the property</h3>
-                                <p>
-                                    <select name="property-size" id="property-size">
-                                        <option value="not-selected" checked>-Select-<br>
-                                        <option value="-60">Less than 60 m2<br>
-                                        <option value="61-80"> 61 - 80 m2<br>
-                                        <option value="81-100">81 - 100 m2<br>
-                                        <option value="101-120">101 - 120 m2<br>
-                                        <option value="121-140">121 - 140 m2<br>
-                                        <option value="141-160">141 - 160 m2<br>
-                                        <option value="161-180">161 - 180 m2<br>
-                                        <option value="181-200">181 - 200 m2<br>
-                                        <option value="+200">More than 180 m2<br>
-                                    </select>
-                                </p>
-                            </div>
-                            <div id="bring-supplies">
-                                <h3>Should we bring cleaning supplies?</h3>
-                                <p>
-                                    <select name="cleaning-supplies" id="cleaning-supplies">
-                                        <option value="not-selected">-Select-</option>
-                                        <option value="no">No</option>
-                                        <option value="yes">Yes</option>
-                                    </select>
-                                </p>
-                            </div>
-                        </div>
-                        <div class="amount-box" id="quoted-amount">
-                            <h3>Price</h3>
-                            <div id="pricing-display">
-                                <h2 id="currency"></h2>
-                                <h1 id="quote-calculation"></h1>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="justify-right">
-                        <button class="button blue-background landing-button black-shadow"><h3 class="button-h3" id="book-now-landing-button">Book now</h3></button>
-                    </div>
-                </div>
-                </div>
-            </div>
-            <p id="modal-close">Close</p>
-    
-        </div>
-    </div>
-    <!-- Modal end -->
-
     <header class="content">
         <div class="top-content">
             <div class="head-description">
                 <!-- Main message -->
-                <div>
+                <div class="style-1">
                 <h1>Cleaning for<br>
-                <strong class="purple-highlight">your Airbnb</strong><br>
+                <strong>your Airbnb</strong><br>
                 made easy</h1>
                 <!-- Subtitle -->
-                <p class="light">Vetted cleaners to get your Airbnb ready for the next guest,<br>
+
+                <p class="style-2">Vetted cleaners to get your Airbnb ready for the next guest,<br>
                 <strong>any time, any day.</strong></p>
-                <button class="button purple-background landing-button black-shadow"><h3 class="button-h3" id="book-now-landing-button">Book a Cleaning</h3></button>
+
+                <button class="button-1 purple-background landing-button shadow-black"><h3 class="button-h3" id="book-now-landing-button">Book a Cleaning</h3></button>
                 </div>
             </div>
             <div class="head-image">
@@ -165,13 +46,13 @@
 
     <main class="content">
         <div class="central-content">
-            <div class="section-title">
+            <div class="style-base">
                 <h2>Airbnb cleaning made easy</h2>
                 <p class="light">Save time and never worry about cleaning again</p>
             </div>
             <div class="element-centered">
                 <div class="grid-content">
-                    <div class="content-item white-bgd black-shadow">
+                    <div class="content-item bg-secondary shadow-black">
                         <h3 class="process-step-title">People you can trust</h3>
                         <img class="content-img" src="img/icons/TRUST.svg" alt="">
                         <p>
@@ -180,7 +61,7 @@
                             Your property is on good hands.
                         </p>
                     </div>
-                    <div class="content-item white-bgd black-shadow">
+                    <div class="content-item bg-secondary shadow-black">
                         <h3 class="process-step-title">Always ready on time</h3>
                         <img class="content-img" src="img/icons/RATE.svg" alt="">
                         <p>
@@ -189,7 +70,7 @@
                             Sparkling clean spaces for your guests.
                         </p>
                     </div>
-                    <div class="content-item white-bgd black-shadow">
+                    <div class="content-item bg-secondary shadow-black">
                         <h3 class="process-step-title">With products on hand</h3>
                         <img class="content-img" src="img/icons/AMMENITIES.svg" alt="">
                         <p>
@@ -204,14 +85,14 @@
     </main>
 
     <section class="content">
-        <div class="bottom-content">
+        <div class="bottom-content style-3">
             <div class="bottom-image">
                 <img id="img-bottom" src="img/mug and book.png" alt="Buenbnb cleaning">
             </div>
             <div class="bottom-description">
                 <!-- Main message -->
                 <h1>All the<br>
-                <strong class="blue-highlight">details covered</strong></h1>
+                <strong>details covered</strong></h1>
                 <!-- Subtitle -->
                 <p class="light">
                     We strive for sparkling clean spacesevery single time we clean an space<br>
@@ -219,7 +100,7 @@
                     Check our guidelines for property cleaning to know more.
                 </p>
                 <div>
-                    <button class="button blue-background landing-button black-shadow">
+                    <button class="button blue-background landing-button shadow-black">
                     <h3 class="button-h3">Book a Cleaning</h3>
                     </button>
                 </div>
