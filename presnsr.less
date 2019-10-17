@@ -3,9 +3,15 @@
 
 // Variables
 
+// Font family 
+
 @font-general: 'Hind', sans-serif;
 
 @font-headers: 'Montserrat', sans-serif;
+
+// Font sizes 
+
+// Font & backgrounds colors
 
 @background-body-color: #F8F8F8;
 
@@ -19,16 +25,66 @@
 
 @brand-color-3: #2F50E3;
 
+@brand-color-4: white;
+
 @shadow-color: rgba(0, 0, 0, 0.1);
 
 @nav-color: @text-color-primary;
 
 @font-color-contrast-1: @text-color-secondary;
 
-@font-color-contrast-1: @text-color-secondary;
+@font-color-contrast-2: @text-color-secondary;
 
-@font-color-contrast-1: @text-color-secondary;
+@font-color-contrast-3: @text-color-secondary;
 
+@font-color-contrast-4: @text-color-secondary;
+
+@font-color-contrast-header: @text-color-primary;
+
+@font-color-contrast-footer: @text-color-secondary;
+
+@header-color: @brand-color-4;
+
+@footer-color: @brand-color-2;
+
+@clickable-item: @text-color-primary;
+
+@clickable-item-hover: @brand-color-3;
+
+@clickable-background-color: transparent;
+
+@clickable-background-color-hover: transparent;
+
+// Padding & margin rules 
+
+@p-1: 0.5em;
+
+@p-2: 1em;
+
+@p-3: 2em;
+
+@m-1: 0.5em;
+
+@m-2: 1em;
+
+@m-3: 2em;
+
+// Sizing
+
+@height-1: 75px;
+
+@height-2: 200px;
+
+@height-3: 300px;
+
+@width-1: 75px;
+
+@width-2: 200px;
+
+@width-3: 300px;
+
+
+///////////// ADVANCED ////////////////////
 
 // styling reset 
 
@@ -50,11 +106,11 @@ h1, h2, h3, h4, h5, h6{
     font-family: @font-headers
 }
 
-.light {
+.lighter {
     font-weight: 300;
 }
 
-.regular {
+.light {
     font-weight: 400;
 }
 
@@ -79,11 +135,6 @@ h1, h2, h3, h4, h5, h6{
 }
 
 // Nesting
-
-.style-nav {
-    color: @nav-color;
-    .font-size();
-}
 
 .style-1 {
     strong {
@@ -124,6 +175,20 @@ body {
     background-color: @brand-color-3;
 }
 
+.bg-header {
+    background-color: @header-color;
+    color: @font-color-contrast-header;
+}
+
+.bg-footer {
+    background-color: @footer-color;
+    color: @font-color-contrast-footer;
+}
+
+.bg-clickable {
+    background-color: @clickable-background-color;
+}
+
 // Shadow styling 
 
 .shadow-black {
@@ -137,231 +202,288 @@ body {
     text-align: center;
     padding: 0 auto;
     border-radius: 20px;
-    cursor: pointer;
     padding: 10px 30px;
+    &:hover {
+        cursor: pointer;
+    }
 }
 
 .button-1 {
     .button();
     .bg-1;
+    color: @font-color-contrast-1;
 }
 
 .button-2 {
     .button();
     .bg-2;
+    color: @font-color-contrast-1;
 }
 
 .button-3 {
     .button();
     .bg-3;
+    color: @font-color-contrast-1;
 }
 
-.purple-background {
-    background: #A560FF;
-    color: white;
+// Padding/margin
+
+.p-1 {
+    padding: @p-1;
 }
 
-.blue-background {
-    background: #2F50E3;
-    color: white;
+.pl-1 {
+    padding-left: @p-1;
 }
 
-.black-background {
-    background: black;
-    color: white;
+.pr-1 {
+    padding-right: @p-1;
 }
 
-/* Input styling */
-input[type=submit] {
-    border: none;
+.pt-1 {
+    padding-top: @p-1;
+}
+
+.pb-1 {
+    padding-bottom: @p-1;
+}
+
+.px-1 {
+    padding: 0 @p-1;
+}
+
+.py-1 {
+    padding: @p-1 0;
+}
+
+.p-2 {
+    padding: @p-2;
+}
+
+.pl-2 {
+    padding-left: @p-2;
+}
+
+.pr-2 {
+    padding-right: @p-2;
+}
+
+.pt-2 {
+    padding-top: @p-2;
+}
+
+.pb-2 {
+    padding-bottom: @p-2;
+}
+
+.px-2 {
+    padding: 0 @p-2;
+}
+
+.py-2 {
+    padding: @p-2 0;
+}
+
+.p-3 {
+    padding: @p-3;
+}
+
+.pl-3 {
+    padding-left: @p-3;
+}
+
+.pr-3 {
+    padding-right: @p-3;
+}
+
+.pt-3 {
+    padding-top: @p-3;
+}
+
+.pb-3 {
+    padding-bottom: @p-3;
+}
+
+.px-3 {
+    padding: 0 @p-3;
+}
+
+.py-3 {
+    padding: @p-3 0;
+}
+
+.m-1 {
+    margin: @m-1;
+}
+
+.ml-1 {
+    margin-left: @m-1;
+}
+
+.mr-1 {
+    margin-right: @m-1;
+}
+
+.mt-1 {
+    margin-top: @m-1;
+}
+
+.mb-1 {
+    margin-bottom: @m-1;
+}
+
+.mx-1 {
+    margin: 0 @m-1;
+}
+
+.my-1 {
+    margin: @m-1 0;
+}
+
+.m-2 {
+    margin: @m-2;
+}
+
+.ml-2 {
+    margin-left: @m-2;
+}
+
+.mr-2 {
+    margin-right: @m-2;
+}
+
+.mt-2 {
+    margin-top: @m-2;
+}
+
+.mb-2 {
+    margin-bottom: @m-2;
+}
+
+.mx-2 {
+    margin: 0 @m-2;
+}
+
+.my-2 {
+    margin: @m-2 0;
+}
+
+.m-3 {
+    margin: @m-3;
+}
+
+.ml-3 {
+    margin-left: @m-3;
+}
+
+.mr-3 {
+    margin-right: @m-3;
+}
+
+.mt-3 {
+    margin-top: @m-3;
+}
+
+.mb-3 {
+    margin-bottom: @m-3;
+}
+
+.mx-3 {
+    margin: 0 @m-3;
+}
+
+.my-3 {
+    margin: @m-3 0;
+}
+
+// Clickable item/logo/images
+
+.ci {
+    background-color: @clickable-background-color;
+    color: @clickable-item;
+    &:hover {
+        cursor: pointer;
+        color: @clickable-item-hover;
+        background: @clickable-background-color-hover;
+    }
+}
+
+.c-img {
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.c-logo {
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+// Alignment/sizing/responsiveness
+
+// Sizing
+
+.h-1 {
+    height: @height-1;
+}
+
+.w-1 {
+    width: @width-1;
+}
+
+.h-2 {
+    height: @height-2;
+}
+
+.w-2 {
+    width: @width-2;
+}
+
+.h-3 {
+    height: @height-3;
+}
+
+.w-3 {
+    width: @width-3;
+}
+
+// Alignment
+
+.text-center {
     text-align: center;
-    border-radius: 20px;
-    cursor: pointer;
-    padding: 10px 30px;
-    background: #2F50E3;
-    color: white;
 }
 
-/* Modal box styling */
-#booking-form {
+.f { //Flex
     display: flex;
-    justify-content: center;
 }
 
-.justify-right{
-    display: flex;
-    justify-content: flex-end;
-}
-
-.modal-box {
-    background: #66666638;
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    z-index: 3;
-}
-
-.booking-information {
-    padding: 0% 1%;
-    margin: 2% 1%;
-    min-width: 30%;
-}
-
-.booking-information p{
-    margin: 2% 0%;
-}
-
-.booking-information input {
-    width: 100%
-}
-
-
-.modal-content {
-    background: #F8F8F8;
-    position: relative;
-    height: 80%;
-    padding: 10px;
-    margin: 1% 10%;
-    overflow: scroll;
-}
-
-#book-modal {
-    display: none;
-}
-
-#modal-close {
-    position: absolute;
-    top: 1%;
-    right: 1%;
-    padding: 1em;
-}
-
-#modal-close:hover {
-    color: #2F50E3;
-    cursor: pointer;
-    background: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
-}
-
-#instant-quotation {
-    display: flex;
+.j-c-b { //justify content between
     justify-content: space-between;
-    height: fit-content;
 }
 
-.quote-box {
-    min-width: 50%;
-    height: fit-content;
-    padding: 1% 1%;
-    margin: 2% 1%;
-    border-radius: 10px;
-    background: #ffffff;
-    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
-}
-
-#calculator-input {
-    min-width: 40%;
-}
-
-#calculator-input select {
-    width: 80%;
-}
-
-.amount-box {
-    padding: 0% 1%;
-    margin: 2% 1%;
-    border-radius: 10px;
-    background: #ffffff;
-    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
-}
-
-#quoted-amount {
-    min-width: 40%;
-    min-height: fit-content;
-    align-self: center;
-}
-
-#pricing-display {
-    display: flex;
+.j-c-c { //justify content center
     justify-content: center;
-    align-items: baseline;
 }
 
-/* Town/city selector in Modal */
-
-#town-selector{
-    display: none;
+.a-c-b { //align content between
+    align-content: space-between;
 }
 
-#colombia{
-    display: none;
+.a-c-c { //align content center
+    align-content: center;
 }
 
-#ecuador{
-    display: none;
+.j-i-c { //justify items center
+    justify-items: center;
 }
 
-#mexico{
-    display: none;
+.a-i-b { //align items between
+    align-items: space-between;
 }
 
-#us{
-    display: none;
-}
-
-/* Nav bar styling */
-.navigation{
-    display: grid;
-    grid-template-columns: 2fr 5fr 4fr;
-    grid-template-areas: 'logo . menu';
-    /* min-width: 900px; */
-}
-
-#logo-nav{
-    grid-area: logo;
-    /* border: 1px solid black; */
-}
-
-#logo-home {
-    width: 200px;
-    position: relative;
-    right: 15px;
-}
-
-#menu-nav{
-    grid-area: menu;
-    /* border: 1px solid black; */
-    display: flex;
-    /* padding-right: 75px; */
-    /* margin: 0 2em; */
-    flex-direction: row;
+.a-i-c { //align items center
     align-items: center;
-    justify-content: flex-end;
-}
-
-.nav-item {
-    padding: 0 0.5em;
-    margin: 0 0.2em;
-    /* border: 1px solid black; */
-    min-width: 115px;
-    text-align: center;
-}
-
-.nav-item:hover {
-    color: #2F50E3;
-    cursor: pointer;
-    background: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1); 
-}
-
-
-/* Overall margin */
-
-.content{
-    margin: 0 5%;
-    min-width: 380px;
 }
 
 /* Grid for header area*/
