@@ -30,7 +30,7 @@ Presnsr is a styling framework, designed to be simple, customizable and modular,
 ## Table of Contents
 
 * [About the Project](#about-the-project)
-  * [Features] (#features)
+  * [Features](#features)
   * [Built With](#built-with)
 * [Getting Started](#getting-started)
     * [Prerequisites](#prerequisites)
