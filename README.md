@@ -49,6 +49,7 @@ Presnsr is a styling framework, designed to be simple, customizable and modular,
 ## Table of Contents
 
 * [About the Project](#about-the-project)
+  * [Features] (#features)
   * [Built With](#built-with)
 * [Getting Started](#getting-started)
     * [Prerequisites](#prerequisites)
@@ -103,12 +104,12 @@ With LESS, you will be able to customize the variables super quick, without any 
 
 **STEPS**
 
-1. Download less.js or less.min.js, both work and you don't have to make any changes. You can download it [HERE](https://github.com/less/less.js/archive/master.zip)
+1. Download less.js or less.min.js, both work and you don't have to make any changes. You can download it [HERE](https://github.com/less/less.js/archive/master.zip) or fork and clone the repo [HERE](git@github.com:wickathou/presnsr-css.git)
 
 2. I recommend you to use LESS on the browser, that way you don't need to compile the LESS code to CSS. For that, first add in the `<head>` tag of your HTML file:
-`<link rel="stylesheet/less" type="text/css" href="YOURROUTEHERE/presnsr.less" />`
+`<link rel="stylesheet/less" type="text/css" href="YOUR-PATH-HERE/presnsr.less" />`
 and
-`<script src="YOURROUTEHERE/less.js" type="text/javascript"></script>` or `<script src="YOURROUTEHERE/less.min.js" type="text/javascript"></script>`
+`<script src="YOUR-PATH-HERE/less.js" type="text/javascript"></script>` or `<script src="YOUR-PATH-HERE/less.min.js" type="text/javascript"></script>`
 If you want to install it in your project, follow the LESS guide [HERE](http://lesscss.org/usage/)
 
 3. Download the **presnsr.less** and put it whenever you like on the your project's folder
@@ -120,13 +121,37 @@ If you want to install it in your project, follow the LESS guide [HERE](http://l
 
 If you don't want to use LESS, you can still get things done with CSS only, but it might be super painful. If you have used bootstrap, then you might know that when you have many classes, making changes becomes a huge hassle.
 
+# Usage
+
+If you have used Bootstrap in the past, you will have basically no learning curve entering into Presnsr.
+
+## Classes in general
+
+Most of the logic with Presnsr is about making classes as short as possible, so in many cases that means just one initial. So for example, to indicate that an element is flex, you declare the class `f`, if you want to make the justify the contents in the center and align the items to the center, you declare:
+
+`<div class="f j-c-c a-i-c">`
+
+### Responsive classes in general
+
+As for responsive classes, there are two ways to make things responsive:
+
+1. By adding the `res` class, which will make the element targeted, responsive across all sizes
+
+2. By using the `res-lg`, `res-md` or `res-sm` class to point to a single viewport size, similar to the responsive Bootstrap classes
+
+
+<!-- ROADMAP -->
+# Roadmap
+
+At the moment I don't really have a fixed plan to continue developing as I'm busy on other projects but any time I make updates I'll be posting them here.
+
 <!-- LICENSE -->
-## License
+# License
 
 GNU 3.0 License
 
 <!-- CONTACT -->
-## Contact
+# Contact
 
 @wickathou - Javier Hernandez
 
@@ -135,12 +160,13 @@ Project Link: [https://github.com/wickathou/presnsr-css](https://github.com/wick
 
 
 <!-- ACKNOWLEDGEMENTS -->
-## Acknowledgements
+# Acknowledgements
 
 - [LESS](https://github.com/less/less.js/archive/master.zip)
 - [The Odin Project](https://www.theodinproject.com)
 - [Microverse](https://microverse.org)
-- [othneildrew](https://github.com/othneildrew) => Best-README-Template
+- [othneildrew](https://github.com/othneildrew) => [Best-README-Template](https://github.com/othneildrew/Best-README-Template)
+- [surjithctly](https://github.com/surjithctly) => [documentation-html-template](https://github.com/surjithctly/documentation-html-template)
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
