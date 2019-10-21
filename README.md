@@ -19,7 +19,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/wickathou/presnsr-css">
-    <img src="./assets/Presnsr-logo.png" alt="Logo" width="80" height="80">
+    <img src="./assets/Presnsr-logo.png" alt="Logo" width="100" height="80">
   </a>
 
   <h3 align="center">The Presnsr Framework</h3>
@@ -39,8 +39,6 @@
     <a href="https://github.com/wickathou/presnsr-css/pulls">Make a Pull Request</a>
   </p>
 </p>
-
-# presnsr-css
 
 # presnsr-css
 Presnsr is a styling framework, designed to be simple, customizable and modular,created for graphic designers and UX/UI designers
