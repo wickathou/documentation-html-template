@@ -150,7 +150,7 @@
                                 on all casses -->
                                 </pre>
 
-                                2. By using the `res-lg`, `res-md` or `res-sm` class to point to a single viewport size, similar to the responsive Bootstrap classes</p>
+                                2. By using the `res-lg`, `res-md` or `res-sm` class to point to a single viewport size, similar to the responsive Bootstrap classes<br>
 
                                 <pre class="brush: html; highlight: [2,4]">
                                 <div class="res-lg">
@@ -162,6 +162,21 @@
                                 <div class="res-sm">
                                 </div> <!-- This makes the element responsive
                                 under 540px -->
+                                </pre>
+
+                                
+                                3. Grids can be assigned by using `g` on the parent element and assigning `g-#`. To make the grids responsive, use the classes `res-lg`, `res-md` or `res-sm`. For column offets, use the tag `.go-#`. The number of columns goes up to 12.</p>
+
+                                <pre class="brush: html; highlight: [2,4]">
+                                <div class="res-lg g">
+                                    <div class="res-md go-1">
+                                    </div> <!-- Grid column offset (empty)-->
+                                    <div class="g-11">
+                                        <div>
+                                            <p>Example</p>
+                                        </div>
+                                    </div> <!-- Grid column-->
+                                </div> <!-- Grid -->
                                 </pre>
                         </div>
                         <!-- end row -->
