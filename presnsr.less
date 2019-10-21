@@ -179,10 +179,6 @@
     border: if(@debugging=1,solid 1px black, inherit);
 }
 
-body {
-    font-family: @font-general;
-}
-
 /* Font styling */
 
 h1, h2, h3, h4, h5, h6{
@@ -260,6 +256,7 @@ h1, h2, h3, h4, h5, h6{
 
 body {
     background-color: @background-body-color;
+    font-family: @font-general;
 }
 
 .bg-1 {
@@ -848,6 +845,28 @@ body {
         }
     }
 
+    // Responsive large only
+
+    .res-lg-g,
+    .res-lg.g,
+    .res-lg.f {
+        .fc;
+        .go-1,
+        .go-2,
+        .go-3,
+        .go-4,
+        .go-5,
+        .go-6,
+        .go-7,
+        .go-8,
+        .go-9,
+        .go-10,
+        .go-11,
+        .go-12 {
+            display: none;
+        }
+    }
+
     //Responsive across
 
     .res-g,
@@ -958,26 +977,6 @@ body {
     }
 
     //Responsive large only
-
-    .res-lg-g,
-    .res-lg.g,
-    .res-lg.f {
-        .fc;
-        .go-1,
-        .go-2,
-        .go-3,
-        .go-4,
-        .go-5,
-        .go-6,
-        .go-7,
-        .go-8,
-        .go-9,
-        .go-10,
-        .go-11,
-        .go-12 {
-            display: none;
-        }
-    }
 
     .res-lg.j-c-b,
     .res-lg.j-c-a,
