@@ -120,6 +120,8 @@ As for responsive classes, there are two ways to make things responsive:
 
 2. By using the `res-lg`, `res-md` or `res-sm` class to point to a single viewport size, similar to the responsive Bootstrap classes
 
+3. Grids can be assigned by using `g` on the parent element and assigning `g-#`. To make the grids responsive, use the classes `res-lg`, `res-md` or `res-sm`. For column offets, use the tag `.go-#`. The number of columns goes up to 12.
+
 
 <!-- ROADMAP -->
 # Roadmap
