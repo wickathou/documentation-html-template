@@ -35,6 +35,7 @@ module.exports = {
       ignore: [
         "after-comment",
         "inside-single-line-block",
+        "declaration-block-trailing-semicolon"
       ],
     } ],
     "declaration-bang-space-after": "never",
@@ -43,7 +44,6 @@ module.exports = {
     "declaration-block-semicolon-space-after": "always-single-line",
     "declaration-block-semicolon-space-before": "never",
     "declaration-block-single-line-max-declarations": 1,
-    "declaration-block-trailing-semicolon": "always",
     "declaration-colon-newline-after": "always-multi-line",
     "declaration-colon-space-after": "always-single-line",
     "declaration-colon-space-before": "never",
@@ -56,6 +56,9 @@ module.exports = {
         "after-comment",
         "inside-single-line-block",
         "function-comma-space-after",
+        "function-whitespace-after",
+        "length-zero-no-unit",
+        "no-eol-whitespace"
       ],
     } ],
     "function-comma-newline-after": "always-multi-line",
@@ -64,8 +67,6 @@ module.exports = {
     "function-name-case": "lower",
     "function-parentheses-newline-inside": "always-multi-line",
     "function-parentheses-space-inside": "never-single-line",
-    "function-whitespace-after": "always",
-    "length-zero-no-unit": true,
     "max-empty-lines": 1,
     "media-feature-colon-space-after": "always",
     "media-feature-colon-space-before": "never",
@@ -76,7 +77,6 @@ module.exports = {
     "media-query-list-comma-newline-after": "always-multi-line",
     "media-query-list-comma-space-after": "always-single-line",
     "media-query-list-comma-space-before": "never",
-    "no-eol-whitespace": true,
     "no-missing-end-of-source-newline": true,
     "number-leading-zero": "always",
     "number-no-trailing-zeros": true,
