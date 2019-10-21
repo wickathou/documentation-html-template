@@ -9,7 +9,6 @@ module.exports = {
         "first-nested",
       ],
       ignore: ["after-comment",
-        "all",
         "block-closing-brace-newline-before",
         "block-opening-brace-space-before"],
     } ],
@@ -34,7 +33,6 @@ module.exports = {
         "first-nested",
       ],
       ignore: [
-        "all",
         "after-comment",
         "inside-single-line-block",
         "declaration-block-trailing-semicolon"
@@ -55,7 +53,6 @@ module.exports = {
         "first-nested",
       ],
       ignore: [
-        "all",
         "after-comment",
         "inside-single-line-block",
         "function-comma-space-after",
@@ -87,7 +84,6 @@ module.exports = {
     "rule-empty-line-before": [ "always-multi-line", {
       except: ["first-nested"],
       ignore: [
-        "all",
         "after-comment",
         "selector-list-comma-newline-after",
         "value-list-comma-space-after",
