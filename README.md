@@ -138,8 +138,6 @@ GNU 3.0 License
 
 Project Link: [https://github.com/wickathou/presnsr-css](https://github.com/wickathou/presnsr-css)
 
-
-
 <!-- ACKNOWLEDGEMENTS -->
 # Acknowledgements
 
