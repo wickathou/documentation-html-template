@@ -10,7 +10,7 @@
   <p align="center">
     A framework created for designers and faster class typing. 
     <br />
-    <a href="https://github.com/wickathou/documentation-html-template/tree/presnsr-guide"><strong>Documentation</strong></a>
+    <a href="https://wickathou.github.io/presnsr-css-documentation/"><strong>Documentation</strong></a>
     <br />
     <br />
     <a href="https://wickathou.github.io/presnsr-css/example.html">Demo</a>
