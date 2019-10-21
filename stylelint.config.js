@@ -9,7 +9,8 @@ module.exports = {
         "first-nested",
       ],
       ignore: ["after-comment",
-        "block-closing-brace-newline-before"],
+        "block-closing-brace-newline-before",
+        "block-opening-brace-space-before"],
     } ],
     "at-rule-name-case": "lower",
     "at-rule-name-space-after": "always-single-line",
@@ -19,7 +20,6 @@ module.exports = {
     "block-closing-brace-space-before": "always-single-line",
     "block-opening-brace-newline-after": "always-multi-line",
     "block-opening-brace-space-after": "always-single-line",
-    "block-opening-brace-space-before": "always",
     "color-hex-case": "lower",
     "color-hex-length": "short",
     "comment-empty-line-before": [ "always", {
