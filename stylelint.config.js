@@ -58,7 +58,8 @@ module.exports = {
         "function-comma-space-after",
         "function-whitespace-after",
         "length-zero-no-unit",
-        "no-eol-whitespace"
+        "no-eol-whitespace",
+        "number-no-trailing-zeros"
       ],
     } ],
     "function-comma-newline-after": "always-multi-line",
@@ -79,7 +80,6 @@ module.exports = {
     "media-query-list-comma-space-before": "never",
     "no-missing-end-of-source-newline": true,
     "number-leading-zero": "always",
-    "number-no-trailing-zeros": true,
     "property-case": "lower",
     "rule-empty-line-before": [ "always-multi-line", {
       except: ["first-nested"],
