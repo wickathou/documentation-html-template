@@ -301,7 +301,6 @@ body {
     text-align: center;
     padding: 0 auto;
     border-radius: 20px;
-    padding: 10px 30px;
     &:hover {
         cursor: pointer;
     }
@@ -668,40 +667,6 @@ body {
     align-items: center;
 }
 
-#grid() {
-    .g-3 {
-        grid-template-areas: 'c-1' 'c-2' 'c-3';
-    }
-    .g-6 {
-        grid-template-areas: 'c-1' 'c-2' 'c-3' 'c-4' 'c-5' 'c-6';
-    }
-    .g-9 {
-        grid-template-areas: 'c-1' 'c-2' 'c-3' 'c-4' 'c-5' 'c-6' 'c-7' 'c-8' 'c-9';
-    }
-    .g {
-        display: grid;
-        grid-template-columns: repeat(12, 1fr);
-    }
-    .g-1 {
-        grid-area: span 1 / span 1;
-    }
-    .g-2 {
-        grid-area: span 1 / span 2;
-    }
-    .g-3 {
-        grid-area: span 1 / span 3;
-    }
-    .g-4 {
-        grid-area: span 1 / span 4;
-    }
-    .g-5 {
-        grid-area: span 1 / span 5;
-    }
-    .g-6 {
-        grid-area: span 1 / span 6;
-    }
-}
-
 .g {
     #grid.g()
 }
@@ -730,6 +695,8 @@ body {
     #grid.g-6()
 }
 
+// Grid offsets
+
 .go-1 {
     #grid.g-1()
 }
@@ -752,6 +719,73 @@ body {
 
 .go-6 {
     #grid.g-6()
+}
+
+.go-7 {
+    #grid.g-7()
+}
+
+.go-8 {
+    #grid.g-8()
+}
+
+.go-9 {
+    #grid.g-9()
+}
+
+.go-10 {
+    #grid.g-10()
+}
+
+.go-11 {
+    #grid.g-11()
+}
+
+.go-12 {
+    #grid.g-12()
+}
+
+#grid() {
+    .g {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+    }
+    .g-1 {
+        grid-area: span 1 / span 1;
+    }
+    .g-2 {
+        grid-area: span 1 / span 2;
+    }
+    .g-3 {
+        grid-area: span 1 / span 3;
+    }
+    .g-4 {
+        grid-area: span 1 / span 4;
+    }
+    .g-5 {
+        grid-area: span 1 / span 5;
+    }
+    .g-6 {
+        grid-area: span 1 / span 6;
+    }
+    .g-7 {
+        grid-area: span 1 / span 7;
+    }
+    .g-8 {
+        grid-area: span 1 / span 8;
+    }
+    .g-9 {
+        grid-area: span 1 / span 9;
+    }
+    .g-10 {
+        grid-area: span 1 / span 10;
+    }
+    .g-11 {
+        grid-area: span 1 / span 11;
+    }
+    .g-12 {
+        grid-area: span 1 / span 12;
+    }
 }
 
 /* Media queries */
