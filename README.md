@@ -43,7 +43,7 @@ Presnsr is a styling framework, designed to be simple, customizable and modular,
 
 <!-- ABOUT THE PROJECT -->
 # About The Project
-## Presnsr
+## Presnsr V 0.11
 
 This framework was developed with sintatical simplicity in mind, for fast front-end developers who don't want to type too much while declaring classes. The framework is developed with LESS and can be fully customized to your brand's guidelines.
 

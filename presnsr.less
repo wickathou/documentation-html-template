@@ -1,3 +1,10 @@
+//V 0.11
+//Changes added on October 22, 2019
+// + Float rules
+// + Background color 4
+// + Percentage based width rules
+// + Viewport height and width rules
+
 // Debugging?
 
 @debugging:0; //If debugging, write 1, if not, write 0
@@ -8,17 +15,17 @@
 
 //Brand's colors
 
-@brand-color-1: #A560FF;
+@brand-color-1: rgb(0, 17, 255);
 
-@brand-color-2: black;
+@brand-color-2: rgb(235, 235, 235);
 
-@brand-color-3: #2F50E3;
+@brand-color-3: rgb(12, 102, 0);
 
-@brand-color-4: white;
+@brand-color-4: rgb(0, 5, 78);
 
 // Background colors, shadow colors and text colors
 
-@background-body-color: #F8F8F8;
+@background-body-color: @brand-color-2;
 
 @text-color-primary: black;
 
@@ -28,9 +35,9 @@
 
 // Font family
 
-@font-general: 'Hind', sans-serif;
+@font-general: 'Libre Baskerville', sans-serif;
 
-@font-headers: 'Montserrat', sans-serif;
+@font-headers: 'Raleway', sans-serif;
 
 // Font sizes
 
@@ -78,17 +85,17 @@
 
 @font-color-contrast-4: @text-color-secondary;
 
-@font-color-contrast-header: @text-color-primary;
+@font-color-contrast-header: @text-color-secondary;
 
 @font-color-contrast-footer: @text-color-secondary;
 
 @header-color: @brand-color-4;
 
-@footer-color: @brand-color-2;
+@footer-color: black;
 
-@clickable-item: @text-color-primary;
+@clickable-item: @text-color-secondary;
 
-@clickable-item-hover: @brand-color-3;
+@clickable-item-hover: @brand-color-2;
 
 @clickable-background-color: transparent;
 
@@ -106,7 +113,7 @@
 
 @m-2: 1em;
 
-@m-3: 4em;
+@m-3: 7em;
 
 // Sizing
 
@@ -114,9 +121,9 @@
 
 @height-2: 200px;
 
-@height-3: 600px;
+@height-3: 300px;
 
-@width-1: 100px;
+@width-1: 150px;
 
 @width-2: 250px;
 
@@ -234,6 +241,30 @@ h1, h2, h3, h4, h5, h6{
 
 // Font styling
 
+.text-color-primary {
+    color: @text-color-primary;
+}
+
+.text-color-secondary {
+    color: @text-color-secondary;
+}
+
+.text-color-1 {
+    color: @brand-color-1;
+}
+
+.text-color-2 {
+    color: @brand-color-2;
+}
+
+.text-color-3 {
+    color: @brand-color-3;
+}
+
+.text-color-4 {
+    color: @brand-color-4;
+}
+
 .style-1 {
     strong {
         color: @brand-color-1;
@@ -269,6 +300,14 @@ body {
 
 .bg-3 {
     background-color: @brand-color-3;
+}
+
+.bg-4 {
+    background-color: @brand-color-4;
+}
+
+.bg-white {
+    background-color: white;
 }
 
 .bg-header {
@@ -498,7 +537,11 @@ body {
 }
 
 .bor-rad-1 {
-    border-radius: 5px;
+    border-radius: 1em;
+}
+
+.bor-rad-2 {
+    border-radius: 2em;
 }
 
 .bor-circle {
@@ -607,10 +650,80 @@ body {
     max-width: @width-3;
 }
 
+// Percentage based
+
+.w-25 {
+    width: 25%;
+}
+
+.w-50 {
+    width: 50%;
+}
+
+.w-75 {
+    width: 75%;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.h-25 {
+    height: 25%;
+}
+
+.h-50 {
+    height: 50%;
+}
+
+.h-75 {
+    height: 75%;
+}
+
+.h-100 {
+    height: 100%;
+}
+
+.h-25vh {
+    height: 25vh;
+}
+
+.h-50vh {
+    height: 50vh;
+}
+
+.h-75vh {
+    height: 75vh;
+}
+
+.h-100vh {
+    height: 100vh;
+}
+
 // Text lignment
 
 .text-center {
     text-align: center;
+}
+
+// Positioning
+
+.pos-fixed {
+    position: fixed;
+}
+
+.top {
+    top: 0;
+}
+
+// Float
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
 }
 
 // Flex and grids
@@ -863,6 +976,26 @@ body {
         .go-12 {
             display: none;
         }
+    }
+
+    //Heights and widths
+
+    .res.w-25,
+    .res.w-50,
+    .res.w-75,
+    .res.w-100 {
+        width:  auto;
+    }
+
+    .res.h-25,
+    .res.h-50,
+    .res.h-75,
+    .res.h-100,
+    .res.h-25vh,
+    .res.h-50vh,
+    .res.h-75vh,
+    .res.h-100vh {
+        height: auto;
     }
 
     // Responsive large only
